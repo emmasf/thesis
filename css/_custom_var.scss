@@ -1,0 +1,28 @@
+$navbar-default-color:             #000;
+$navbar-default-bg:                #fff;
+$navbar-default-border:            #000;
+$link-color:                       #009DFF;
+$link-color-reverse:               #fff;
+$spot-color:                       #FF6200;
+
+
+// Navbar links
+$navbar-default-link-color:                $link-color;
+$navbar-default-link-hover-color:          darken($link-color, 10%) !default;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         $navbar-default-color;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+
+$btn-default-color:              $link-color-reverse;
+$btn-default-bg:                 $link-color;
+$btn-default-border:             $navbar-default-bg;
+
+$input-group-addon-bg:           #ccc;
+$input-group-addon-border-color: darken($input-group-addon-bg, 6.5%);
+
+$light-grey-accent: #ccc;
+
+
