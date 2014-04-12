@@ -2168,9 +2168,21 @@ img { width: 100%; margin: 10px 0; }
 .blog-header { min-height: 50px; clear: both; }
 .blog-header h3 { margin-top: 5px; padding: 0 0 15px 0; }
 
-h1 { font-size: 55px; line-height: 1.2em; }
+h1 { font-size: 55px; line-height: 1.2em; margin-bottom: 30px; }
 
 h2 { float: left; margin: 0; padding: 0 0 15px 0; }
 @media screen and (max-width: 480px) { h2 { float: none; padding: 0; } }
 
 h4 { text-transform: uppercase; }
+
+#page { margin-bottom: 90px; min-height: 450px; }
+
+#footer { height: 200px; color: #cccccc; }
+#footer .rule { background: #cccccc; height: 1px; margin: 15px; padding: 0; }
+#footer .right { text-align: right; }
+
+.nav-tabs > li.launcher { float: right; }
+.nav-tabs > li.launcher button { margin: 0 0 6px 0; padding: 7px 10px; }
+
+button { padding: 10px 15px; margin-top: 30px; background-color: #efefef; border: 0; -webkit-border-radius: 8px; }
+button:focus { outline: 0 !important; }

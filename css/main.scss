@@ -64,7 +64,8 @@ img {
   
 h1 {
   font-size: 55px;
-  line-height: 1.2em;    
+  line-height: 1.2em;   
+  margin-bottom: 30px; 
   }
   
 h2 {
@@ -78,7 +79,46 @@ h2 {
     }
     
 h4 {
-  text-transform: uppercase;
+  text-transform: uppercase; 
+  }
+  
+#page {
+  margin-bottom: 90px;
+  min-height: 450px;}
+  
+#footer {
+  height: 200px;
+  color: $light-grey-accent;
+  
+  .rule {
+    background: $light-grey-accent;
+    height: 1px;
+    margin:15px;
+    padding:0;
+  }
+  
+  .right {text-align: right;}
+    
+  }
+  
+.nav-tabs > li.launcher {
+  float: right;
+  button {
+    margin: 0 0 6px 0;
+    padding: 7px 10px;
+    }
+  
+  
+  }
+  
+button {
+  padding:10px 15px;
+  margin-top: 30px;
+  background-color: #efefef;
+  border: 0;
+  -webkit-border-radius: 8px;
+  
+  &:focus {outline:0 !important;}
   
   }
 
