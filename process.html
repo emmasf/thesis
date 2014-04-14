@@ -1,131 +1,85 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<title>A Thesis Project</title>
+	<meta name="description" content="A website documenting the thesis project and process of Emma Sherwood-Forbes, 2014 Graduate of the Maryland Institute College of Art Masters program in Graphic Design.">
+	<meta name="author" content="Emma Sherwood-Forbes">
 
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script> <!-- ESF: Always load in head, needed for page display. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/skeleton.css">
+	<link rel="stylesheet" href="styles/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Favicons ----------------------------->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
 </head>
-
-
 <body>
-<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. 
-Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-
 <div class="container">
 
-  <ul class="nav nav-tabs">
+<nav id="nav" class="sixteen columns clearfix">
+		<ul class="nav nav-tabs">
     <li><a href="index.html">White as Snow</a></li>
     <li><a href="exhibition.html">Exhibition</a></li>
     <li class="active"><a href="process.html">Process + Essay</a></li>
     <li><a href="thanks.html">Colophon</a></li>
     <li class="launcher"><button><a href="viewer.html">Launch the App</a></button></li>
   </ul>
-
-  <div id="page" class="row">
-    
-    <div class="col-sm-8 blog-main">
-
-        <h1>Process Page: the essay, lots of images, trials and tribulations.</h1>
+		<hr />
+</nav>
+	
+		<div class="twelve columns">
+			<h1>Process Page: the essay, lots of images, trials and tribulations.</h1>
         <div id="essay">
           <p>White as Snow is an interactive story for adults. Historical context, sociological analysis, and visual surprise mix with more traditional text-based narrative to shed light on the Grimm's classic tale. This interactive book is an exploration of new possibilities for stories in the digital world.</p> 
           <p>Interaction design often hopes to be invisible, a means to deliver content rather than an end in itself. In this project, the graphic interactions are as exciting as they are functional. Reading White as Snow is an act of uncovering and creating, a new means of exercising the imagination.</p>
           <p>Sounds like a neat little package, right? It didn't start that way.</p>
         </div>
-               </div><!-- /left column -->
 
-       <div class="col-sm-3 col-sm-offset-1 sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Intro</h4>
+		</div>
+		<div class="three columns offset-by-one">
+		<h4>Intro</h4>
             <h4>Process Essay</h4>
             <h4>Research</h4>
             <h4>Images</h4>
-          </div>
-        </div><!-- /.blog-sidebar -->
+
+		</div>
+
+		
+<div id="footer" class="sixteen columns clearfix">
+	<hr />
+	<p class="footer left eight columns alpha">This has been a production by Emma Sherwood-Forbes<br/>
+		<a href="mailto:emma@sherwoodandforbes.com">Get in touch</a>
+	</p>
+	<p class="footer right eight columns omega">Copyright info and such<br/>
+		<a href="http://www.sherwoodandforbes.com" target="_blank" >Portfolio</a> |
+		<a href="https://twitter.com/sherwoodforbes" target="_blank" >Twitter</a> |
+		<a href="psyche.html" >Facebook</a> |
+		<a href="https://github.com/emmasf" target="_blank" >Github</a> |
+		<a href="#">LinkedIn</a> |
+		<a href="#">Dribbble</a>
+		</p>
+</div>
+
+	</div><!-- container -->
 
 
-      </div><!-- /.row -->
-      
-      <div id="footer" class="row">
-        <div class="rule"></div>
-        <div class="col-sm-6">Copyright and my name and such</div>
-        <div class="col-sm-6 right">
-          <p><a href="http://www.sherwoodandforbes.com" target="_blank" >Portfolio</a> |
-          <a href="https://twitter.com/sherwoodforbes" target="_blank" >Twitter</a> |
-          <a href="psyche.html" >Facebook</a> |
-          <a href="https://github.com/emmasf" target="_blank" >Github</a> |
-          <a href="#">LinkedIn</a> |
-          <a href="#">Dribbble</a>
-          </p>
-        </div>
-      </div>
-
-    </div><!-- /.container -->
-
-    
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendor/bootstrap.js"></script>
-    <script src="js/vendor/bootstrap/collapse.js"></script>
-    <script src="js/vendor/bootstrap/dropdown.js"></script>
-    <script src="js/vendor/readmore.js"></script>
-
-<script>
-  $('#essay').readmore();
-  </script>
-
-
-<!--
-<script>
-  $('#essay').readmore({
-    speed: 75,
-    maxHeight: 100,
-    speed: 100, //in milliseconds
-    maxHeight: 200, // in pixels
-    heightMargin: 16, //in pixels, avoids collapsing blocks that are only slightly larger than maxHeight
-    moreLink: '<a href="#">Read more</a>',
-    lessLink: '<a href="#">Close</a>',
-    embedCSS: true //insert required CSS dynamically, set this to false if you include the necessary CSS in a stylesheet
-    sectionCSS: 'display: block; width: 100%;' //sets the styling of the blocks
-    startOpen: false // do not immediately truncate, start in the fully opened position
-    expandedClass: 'readmore-js-expanded' // class added to expanded blocks
-    collapsedClass: 'readmore-js-collapsed' // class added to collapsed blocks
-    beforeToggle: function() {} // called after a more or less link is clicked, but before the block is collapsed or expanded
-    afterToggle: function(trigger, element, more) {
-    if(! more) { // The "Close" link was clicked
-      $('html, body').animate( { scrollTop: element.offset().top }, {duration: 100 } );
-    }
-  } //called after the block is collapsed or expanded
-  });
-  </script>
--->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-    
+<!------------------------------------------------------------------->
+<!-- Begin Javascript ----------------------------------------------->
+<!------------------------------------------------------------------->
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-    
 </body>
-    
-    
 </html>
