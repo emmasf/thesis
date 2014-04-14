@@ -1,12 +1,9 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
+/******************************************************************************/
+/** SKELETON SKELETON *********************************************************/
+/******************************************************************************/
+/******************************************************************************/
 
+/* Skeleton V1.2 / Copyright 2011, Dave Gamache / www.getskeleton.com / Free to use under the MIT license. / http://www.opensource.org/licenses/mit-license.php / 6/20/2012  */
 
 /* Table of Contents
 ==================================================
@@ -21,7 +18,7 @@
 /* #Base 960 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: ($screen-lg)px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: $screen-lg; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
@@ -76,8 +73,8 @@
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: ( $screen-md)px ) and (max-width: ( ($screen-lg)-1)px )  {
-        .container                                  { width: ($screen-md)px; }
+    @media only screen and (min-width: $screen-md ) and (max-width: $under-screen-lg )  {
+        .container                                  { width: $screen-md; }
         .container .column,
         .container .columns                         { margin-left: 10px; margin-right: 10px;  }
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
@@ -131,7 +128,7 @@
 
     /* Note: Design for a width of 480px */
 
-    @media only screen and (min-width: ($screen-sm)px ) and (max-width: (($screen-md)-1)px ) {
+    @media only screen and (min-width: $screen-sm ) and (max-width: $under-screen-md ) {
         .container { width: 420px; }
         .container .columns,
         .container .column { margin: 0; }
@@ -164,7 +161,7 @@
 
     /* Note: Design for a width of 320px */
 
-    @media only screen and (max-width: ($screen-xs)px ) {
+    @media only screen and (max-width: $screen-xs ) {
         .container { width: 300px; }
         .container .columns,
         .container .column { margin: 0; }
