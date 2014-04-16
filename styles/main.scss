@@ -3,55 +3,17 @@
 @import "boilerplate"; 
 @import "base"; 
 @import "skeleton"; 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700);
 
 /*****************MEEEEE*************************************************************/
 
-/* #Site Styles
-================================================== */
-.footer.right {text-align: right}
-nav {	
-	position: relative;
-	width: 100%;
-	margin-top:40px;
-	ul li{
-	float:left;
-	margin-right:10px;
-	button {
-		margin-top:-5px;float:right;
-		position: absolute;
-		right: 0;}
-		}
-}
-
-
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
-
 .container {margin: 0px auto;}
-
 
 img {
     width: 100%;
     margin: 10px 0;
     } 
     
-    .nav {
+.nav {
   margin: 60px 0 45px 0;
   }
 
@@ -61,27 +23,217 @@ button {
   margin-top: 30px;
   background-color: #efefef;
   border: 0;
-  -webkit-border-radius: 8px;
+  border-radius: $border-radius;
+  -moz-border-radius:  $border-radius;
+  -webkit-border-radius:  $border-radius;
+  -o-border-radius:  $border-radius;
   
   &:focus {outline:0 !important;}
   
   }
   
-  /* #Media Queries
-================================================== */
+  .button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		z-index: 100;
+	  color: #444;
+	  display: inline-block;
+	  font-size: 11px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(255, 255, 255, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: normal;
+	  padding: 8px 10px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #222;
+		background: #ddd; /* Old browsers */
+	  border: 0;}
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		border: 0;
+		}
+
+	.button.full-width,
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+	
+ul, ol { margin-bottom: 32px; }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+#page li { margin-bottom: 6px; }
+#page li:first-child { margin-top: 6px; }
+li p {}
+  
+/* Component Styles ****************************/   
+
+nav {	
+	position: relative;
+	width: 100%;
+	margin-top:40px;
+	ul li {
+	margin-bottom:12px;
+	float:left;
+	margin-right:18px;
+	button {
+		margin-top:-5px;float:right;
+		position: absolute;
+		right: 0;}
+		}
+  }
+  
+.image-pile {
+  img {
+    float:left;
+    margin-right:12px;
+  }
+  }
+  
+.footer.right {text-align: right}
+  
+/* Type Styles ****************************/ 
+
+body {
+	font: 16px/24px $serif;
+	color: #000;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.33em;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+	font-family: $sans;
+	font-weight: bold;
+	letter-spacing:0.02em; }
+	
+	
+h1 {
+  font-size: 90px;
+  line-height: 1.1em;
+  letter-spacing: 0.015em;
+  margin-top: 24px;
+  } 
+  
+h3 {
+  font-size: 32px;
+  line-height: 1.1em;
+  letter-spacing: 0.015em;
+  font-style: italic;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  }  
+  
+p {
+  margin-bottom: 9px;
+  }
+  
+#footer {
+  font-family: $sans;
+  font-size: 12px;
+  line-height: 1.5em;
+  p,a {
+    color: $grey-text;
+    }
+  }
+  
+/* @Font-Face ****************************/
+
+	@font-face {
+	    font-family: 'Arn';
+	    src: url('../type/Arnhem-Blond.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal; }	    
+
+	@font-face {
+	    font-family: 'Arn';
+	    src: url('../type/Arnhem-BlondItalic.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: italic; }	    
+
+	@font-face {
+	    font-family: 'Arn';
+	    src: url('../type/Arnhem-Bold.ttf') format('truetype');
+	    font-weight: bold;
+	    font-style: normal; }    
+
+	@font-face {
+	    font-family: 'Arn';
+	    src: url('../type/Arnhem-BoldItalic.ttf') format('truetype');
+	    font-weight: bold;
+	    font-style: italic; }	    
+
+	@font-face {
+	    font-family: 'Hel';
+	    src: url('../type/HelveticaNeue-Roman.otf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal; }
+	    
+	 @font-face {
+	    font-family: 'Hel';
+	    src: url('../type/HelveticaNeue-Italic.otf') format('truetype');
+	    font-weight: normal;
+	    font-style: italic; }
+	    
+	 @font-face {
+	    font-family: 'Hel';
+	    src: url('../type/HelveticaNeue-Bold.otf') format('truetype');
+	    font-weight: bold;
+	    font-style: normal; }
+	    
+	 @font-face {
+	    font-family: 'Hel';
+	    src: url('../type/HelveticaNeue-BoldItalic.otf') format('truetype');
+	    font-weight: bold;
+	    font-style: italic; }
+
+
+	    
+  
+  /* #Media Queries ****************************/
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: $under-screen-lg) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: $screen-md) and (max-width: $under-screen-lg) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: $under-screen-md) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: $screen-sm) and (max-width: $under-screen-md) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: $under-screen-sm) {}
 
