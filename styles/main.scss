@@ -1,7 +1,6 @@
 @import "custom_var"; 
 @import "normalize";
 @import "boilerplate"; 
-@import "base"; 
 @import "skeleton"; 
 
 /*****************MEEEEE*************************************************************/
@@ -19,70 +18,38 @@ img {
 
   
 button {
-  padding:10px 15px;
+  padding:6px 9px;
   margin-top: 30px;
-  background-color: #efefef;
+  background-color: $button-color;
   border: 0;
   border-radius: $border-radius;
   -moz-border-radius:  $border-radius;
   -webkit-border-radius:  $border-radius;
   -o-border-radius:  $border-radius;
   
-  &:focus {outline:0 !important;}
+  a {
+    font-size: $small-text;
+    font-weight: 700;
+    font-family: $sans;
+    text-decoration: none;  
+    color: $button-color-active;
+    }
+    
+  a:visited {color: $button-color-active;}
   
   }
   
-  .button,
-	button,
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"] {
-		z-index: 100;
-	  color: #444;
-	  display: inline-block;
-	  font-size: 11px;
-	  font-weight: bold;
-	  text-decoration: none;
-	  text-shadow: 0 1px rgba(255, 255, 255, .75);
-	  cursor: pointer;
-	  margin-bottom: 20px;
-	  line-height: normal;
-	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  
+button:focus { outline:0 !important; }
+button:hover {
+  background-color: $button-color-hover;
+  a {color:#fff;}
+  }
+button:focus, button:active {
+  background-color: $button-color-active;
+  a {color:#fff;}
+  }
 
-	.button:hover,
-	button:hover,
-	input[type="submit"]:hover,
-	input[type="reset"]:hover,
-	input[type="button"]:hover {
-		color: #222;
-		background: #ddd; /* Old browsers */
-	  border: 0;}
-
-	.button:active,
-	button:active,
-	input[type="submit"]:active,
-	input[type="reset"]:active,
-	input[type="button"]:active {
-		border: 0;
-		}
-
-	.button.full-width,
-	button.full-width,
-	input[type="submit"].full-width,
-	input[type="reset"].full-width,
-	input[type="button"].full-width {
-		width: 100%;
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-		text-align: center; }
-
-	/* Fix for odd Mozilla border & padding issues */
-	button::-moz-focus-inner,
-	input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-	}
 	
 ul, ol { margin-bottom: 32px; }
 ul { list-style: none outside; }
@@ -101,14 +68,17 @@ nav {
 	position: relative;
 	width: 100%;
 	margin-top:40px;
+  border-bottom:$rule;
+  margin-bottom: 40px;
+  padding-bottom:5px;
 	ul li {
-	margin-bottom:12px;
-	float:left;
-	margin-right:18px;
-	button {
-		margin-top:-5px;float:right;
-		position: absolute;
-		right: 0;}
+  	margin-bottom:12px;
+  	float:left;
+  	margin-right:18px;
+  	button {
+  		margin-top:-5px;float:right;
+  		position: absolute;
+  		right: 0;}
 		}
   }
   
@@ -119,16 +89,74 @@ nav {
   }
   }
   
-.footer.right {text-align: right}
+footer {
+  margin:40px 0;
+  border-top:$rule;
+  padding-top:20px;
+  .right { text-align: right } 
+  svg {
+    height: 36px;
+    fill: $grey-text;
+    margin-right: 5px;
+    margin-top:-5px;
+    }
+  svg:hover { fill: $link-color; }
+  svg:active, svg:focus { fill: $spot-color; }
+  
+  svg#twitter { width:36px; }
+  svg#linkedin { width:32px; }
+  svg#behance { width:38px; }
+  svg#dribbble { width:26px; }
+  svg#github { width:30px; }
+  }
+  
+a.tooltip {
+  position: relative;
+  display: inline;
+}
+a.tooltip span {
+  position: absolute;
+  width:100px;
+  color: $grey-text;
+  /* background: $light-grey-accent; */
+  height: 30px;
+  line-height: 34px;
+  text-align: center;
+  visibility: hidden;
+  /* border-radius: 6px; */
+}
+/*
+a.tooltip span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-bottom: 8px solid #F2F2F2;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+*/
+a:hover.tooltip span {
+  visibility: visible;
+  opacity: 0.8;
+  /* top: 20px; */
+  top: 5px;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 999;
+}
   
 /* Type Styles ****************************/ 
 
 body {
-	font: 16px/24px $serif;
+	font: 17.33px $serif;
 	color: #000;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 	line-height: 1.33em;
+	letter-spacing: 0.01em;
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,38 +186,53 @@ p {
   margin-bottom: 9px;
   }
   
-#footer {
+footer {
   font-family: $sans;
-  font-size: 12px;
+  font-weight: bold;
+  font-size: $small-text;
   line-height: 1.5em;
-  p,a {
-    color: $grey-text;
-    }
+  
+  p,a { color: $grey-text; }
+  a:visited { color: $grey-text; }
+  a:hover { color: $link-color; }
+  a:active, a:focus { color: $spot-color; }
   }
   
 /* @Font-Face ****************************/
 
 	@font-face {
 	    font-family: 'Arn';
-	    src: url('../type/Arnhem-Blond.ttf') format('truetype');
+	    src: url('../type/Arnhem-Blond.eot');
+	    src: url('../type/Arnhem-Blond.eot?#iefix') format('embedded-opentype'),
+           url('../type/Arnhem-Blond.woff') format('woff'),
+           url('../type/Arnhem-Blond.ttf') format('truetype');
 	    font-weight: normal;
 	    font-style: normal; }	    
 
 	@font-face {
 	    font-family: 'Arn';
-	    src: url('../type/Arnhem-BlondItalic.ttf') format('truetype');
+	    src: url('../type/Arnhem-BlondItalic.eot');
+	    src: url('../type/Arnhem-BlondItalic.eot?#iefix') format('embedded-opentype'),
+           url('../type/Arnhem-BlondItalic.woff') format('woff'),
+           url('../type/Arnhem-BlondItalic.ttf') format('truetype');
 	    font-weight: normal;
 	    font-style: italic; }	    
 
 	@font-face {
 	    font-family: 'Arn';
-	    src: url('../type/Arnhem-Bold.ttf') format('truetype');
+	    src: url('../type/Arnhem-Bold.eot');
+	    src: url('../type/Arnhem-Bold.eot?#iefix') format('embedded-opentype'),
+           url('../type/Arnhem-Bold.woff') format('woff'),
+           url('../type/Arnhem-BlondItalic.ttf') format('truetype');
 	    font-weight: bold;
 	    font-style: normal; }    
 
 	@font-face {
 	    font-family: 'Arn';
-	    src: url('../type/Arnhem-BoldItalic.ttf') format('truetype');
+	    src: url('../type/Arnhem-BoldItalic.eot');
+	    src: url('../type/Arnhem-BoldItalic.eot?#iefix') format('embedded-opentype'),
+           url('../type/Arnhem-BoldItalic.woff') format('woff'),
+           url('../type/Arnhem-BoldItalic.ttf') format('truetype');
 	    font-weight: bold;
 	    font-style: italic; }	    
 

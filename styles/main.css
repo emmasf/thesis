@@ -24,7 +24,7 @@ audio:not([controls]) { display: none; height: 0; }
 html { font-size: 100%; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /** Address `font-family` inconsistency between `textarea` and other form elements. */
-html, button, input, select, textarea { font-family: sans-serif; }
+html, button, input, select, textarea { font-family: Hel, Helvetica, Arial, sans-serif; }
 
 /** Address margins handled incorrectly in IE 6/7. */
 body { margin: 0; }
@@ -235,7 +235,7 @@ textarea { resize: vertical; }
   h2, h3 { page-break-after: avoid; } }
 /***** End HTML5 Boilerplate Styles *****/
 /******************************************************************************/
-/** SKELETON BASE CSS *********************************************************/
+/** SKELETON SKELETON *********************************************************/
 /******************************************************************************/
 /******************************************************************************/
 /* Skeleton V1.2 / Copyright 2011, Dave Gamache / www.getskeleton.com / Free to use under the MIT license. / http://www.opensource.org/licenses/mit-license.php / 6/20/2012  */
@@ -262,6 +262,8 @@ em { font-style: italic; }
 strong { font-weight: bold; color: #333; }
 
 small { font-size: 80%; }
+
+i { font-style: italic; letter-spacing: 0.01em; }
 
 /*	Blockquotes  */
 blockquote, blockquote p { font-size: 17px; color: #777; font-style: italic; }
@@ -318,13 +320,6 @@ label span, legend span { font-weight: normal; font-size: 13px; color: #444; }
 
 .add-bottom { margin-bottom: 20px !important; }
 
-/******************************************************************************/
-/** SKELETON SKELETON *********************************************************/
-/******************************************************************************/
-/******************************************************************************/
-/* Skeleton V1.2 / Copyright 2011, Dave Gamache / www.getskeleton.com / Free to use under the MIT license. / http://www.opensource.org/licenses/mit-license.php / 6/20/2012  */
-/* Table of Contents
-================================================== #Base 960 Grid #Tablet (Portrait) #Mobile (Portrait) #Mobile (Landscape) #Clearing */
 /* #Base 960 Grid
 ================================================== */
 .container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
@@ -485,19 +480,17 @@ img { width: 100%; margin: 10px 0; }
 
 .nav { margin: 60px 0 45px 0; }
 
-button { padding: 10px 15px; margin-top: 30px; background-color: #efefef; border: 0; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; }
+button { padding: 6px 9px; margin-top: 30px; background-color: whitesmoke; border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
+button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #7800ff; }
+button a:visited { color: #7800ff; }
+
 button:focus { outline: 0 !important; }
 
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] { z-index: 100; color: #444; display: inline-block; font-size: 11px; font-weight: bold; text-decoration: none; text-shadow: 0 1px rgba(255, 255, 255, 0.75); cursor: pointer; margin-bottom: 20px; line-height: normal; padding: 8px 10px; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+button:hover { background-color: #009dff; }
+button:hover a { color: #fff; }
 
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { color: #222; background: #ddd; /* Old browsers */ border: 0; }
-
-.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active { border: 0; }
-
-.button.full-width, button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width { width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
-
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+button:focus, button:active { background-color: #7800ff; }
+button:focus a, button:active a { color: #fff; }
 
 ul, ol { margin-bottom: 32px; }
 
@@ -514,16 +507,35 @@ ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px; }
 #page li:first-child { margin-top: 6px; }
 
 /* Component Styles ****************************/
-nav { position: relative; width: 100%; margin-top: 40px; }
+nav { position: relative; width: 100%; margin-top: 40px; border-bottom: 8px solid whitesmoke; margin-bottom: 40px; padding-bottom: 5px; }
 nav ul li { margin-bottom: 12px; float: left; margin-right: 18px; }
 nav ul li button { margin-top: -5px; float: right; position: absolute; right: 0; }
 
 .image-pile img { float: left; margin-right: 12px; }
 
-.footer.right { text-align: right; }
+footer { margin: 40px 0; border-top: 8px solid whitesmoke; padding-top: 20px; }
+footer .right { text-align: right; }
+footer svg { height: 36px; fill: #afafaf; margin-right: 5px; margin-top: -5px; }
+footer svg:hover { fill: #009dff; }
+footer svg:active, footer svg:focus { fill: #7800ff; }
+footer svg#twitter { width: 36px; }
+footer svg#linkedin { width: 32px; }
+footer svg#behance { width: 38px; }
+footer svg#dribbble { width: 26px; }
+footer svg#github { width: 30px; }
+
+a.tooltip { position: relative; display: inline; }
+
+a.tooltip span { position: absolute; width: 100px; color: #afafaf; /* background: $light-grey-accent; */ height: 30px; line-height: 34px; text-align: center; visibility: hidden; /* border-radius: 6px; */ }
+
+/*
+a.tooltip span:after { content: ''; position: absolute; bottom: 100%; left: 50%; margin-left: -8px; width: 0; height: 0; border-bottom: 8px solid #F2F2F2; border-right: 8px solid transparent; border-left: 8px solid transparent;
+}
+*/
+a:hover.tooltip span { visibility: visible; opacity: 0.8; /* top: 20px; */ top: 5px; left: 50%; margin-left: -50px; z-index: 999; }
 
 /* Type Styles ****************************/
-body { font: 16px/24px Arn, Georgia, serif; color: #000; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; line-height: 1.33em; }
+body { font: 17.33px Arn, Georgia, serif; color: #000; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; line-height: 1.33em; letter-spacing: 0.01em; }
 
 h1, h2, h3, h4, h5, h6 { color: #181818; font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 0.02em; }
 
@@ -533,17 +545,20 @@ h3 { font-size: 32px; line-height: 1.1em; letter-spacing: 0.015em; font-style: i
 
 p { margin-bottom: 9px; }
 
-#footer { font-family: Hel, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.5em; }
-#footer p, #footer a { color: #888888; }
+footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; }
+footer p, footer a { color: #afafaf; }
+footer a:visited { color: #afafaf; }
+footer a:hover { color: #009dff; }
+footer a:active, footer a:focus { color: #7800ff; }
 
 /* @Font-Face ****************************/
-@font-face { font-family: 'Arn'; src: url("../type/Arnhem-Blond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Arn'; src: url("../type/Arnhem-Blond.eot"); src: url("../type/Arnhem-Blond.eot?#iefix") format("embedded-opentype"), url("../type/Arnhem-Blond.woff") format("woff"), url("../type/Arnhem-Blond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'Arn'; src: url("../type/Arnhem-BlondItalic.ttf") format("truetype"); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'Arn'; src: url("../type/Arnhem-BlondItalic.eot"); src: url("../type/Arnhem-BlondItalic.eot?#iefix") format("embedded-opentype"), url("../type/Arnhem-BlondItalic.woff") format("woff"), url("../type/Arnhem-BlondItalic.ttf") format("truetype"); font-weight: normal; font-style: italic; }
 
-@font-face { font-family: 'Arn'; src: url("../type/Arnhem-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Arn'; src: url("../type/Arnhem-Bold.eot"); src: url("../type/Arnhem-Bold.eot?#iefix") format("embedded-opentype"), url("../type/Arnhem-Bold.woff") format("woff"), url("../type/Arnhem-BlondItalic.ttf") format("truetype"); font-weight: bold; font-style: normal; }
 
-@font-face { font-family: 'Arn'; src: url("../type/Arnhem-BoldItalic.ttf") format("truetype"); font-weight: bold; font-style: italic; }
+@font-face { font-family: 'Arn'; src: url("../type/Arnhem-BoldItalic.eot"); src: url("../type/Arnhem-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../type/Arnhem-BoldItalic.woff") format("woff"), url("../type/Arnhem-BoldItalic.ttf") format("truetype"); font-weight: bold; font-style: italic; }
 
 @font-face { font-family: 'Hel'; src: url("../type/HelveticaNeue-Roman.otf") format("truetype"); font-weight: normal; font-style: normal; }
 
