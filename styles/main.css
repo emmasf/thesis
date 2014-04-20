@@ -480,43 +480,43 @@ img { width: 100%; margin: 10px 0; }
 
 .nav { margin: 60px 0 45px 0; }
 
+/* Component Styles ****************************/
+#gdmfa { height: 36px; width: 100%; background-color: whitesmoke; }
+#gdmfa p { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; color: #000; line-height: 24px; padding: 6px 12px; }
+#gdmfa a:hover { color: #1642ff; }
+#gdmfa a:focus, #gdmfa a:active { color: #1642ff; }
+#gdmfa a:visited { color: inherit; }
+
+nav { position: relative; width: 100%; margin-top: 40px; border-bottom: 8px solid whitesmoke; margin-bottom: 40px; padding-bottom: 5px; }
+nav ul li { margin-bottom: 12px; float: left; margin-right: 24px; font-weight: bold; }
+nav ul li button { margin-top: -5px; float: right; position: absolute; right: 0; }
+nav a { color: #000; }
+nav a:visited { color: #000; }
+nav a:hover { color: #1642ff; }
+nav ul li a:active, nav ul li.active a:focus { color: #7800ff; }
+nav ul li.active a { color: #7800ff; }
+
 button { padding: 6px 9px; margin-top: 30px; background-color: whitesmoke; border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
-button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #7800ff; }
-button a:visited { color: #7800ff; }
+button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #1642ff; }
+button a:visited { color: #1642ff; }
+
+button.big { padding: 12px 18px; margin-top: 30px; }
+button.big a { font-size: 17px; }
 
 button:focus { outline: 0 !important; }
 
-button:hover { background-color: #009dff; }
+button:hover { background-color: #7800ff; }
 button:hover a { color: #fff; }
 
-button:focus, button:active { background-color: #7800ff; }
+button:focus, button:active { background-color: #1642ff; }
 button:focus a, button:active a { color: #fff; }
-
-ul, ol { margin-bottom: 32px; }
-
-ul { list-style: none outside; }
-
-ol { list-style: decimal; }
-
-ul ul, ul ol, ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%; }
-
-ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px; }
-
-#page li { margin-bottom: 6px; }
-
-#page li:first-child { margin-top: 6px; }
-
-/* Component Styles ****************************/
-nav { position: relative; width: 100%; margin-top: 40px; border-bottom: 8px solid whitesmoke; margin-bottom: 40px; padding-bottom: 5px; }
-nav ul li { margin-bottom: 12px; float: left; margin-right: 18px; }
-nav ul li button { margin-top: -5px; float: right; position: absolute; right: 0; }
 
 .image-pile img { float: left; margin-right: 12px; }
 
 footer { margin: 40px 0; border-top: 8px solid whitesmoke; padding-top: 20px; }
 footer .right { text-align: right; }
 footer svg { height: 36px; fill: #afafaf; margin-right: 5px; margin-top: -5px; }
-footer svg:hover { fill: #009dff; }
+footer svg:hover { fill: #1642ff; }
 footer svg:active, footer svg:focus { fill: #7800ff; }
 footer svg#twitter { width: 36px; }
 footer svg#linkedin { width: 32px; }
@@ -535,6 +535,20 @@ a.tooltip span:after { content: ''; position: absolute; bottom: 100%; left: 50%;
 a:hover.tooltip span { visibility: visible; opacity: 0.8; /* top: 20px; */ top: 5px; left: 50%; margin-left: -50px; z-index: 999; }
 
 /* Type Styles ****************************/
+ul, ol { margin-bottom: 32px; }
+
+ul { list-style: none outside; }
+
+ol { list-style: decimal; }
+
+ul ul, ul ol, ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%; }
+
+ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px; }
+
+#page li { margin-bottom: 6px; }
+
+#page li:first-child { margin-top: 6px; }
+
 body { font: 17.33px Arn, Georgia, serif; color: #000; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; line-height: 1.33em; letter-spacing: 0.01em; }
 
 h1, h2, h3, h4, h5, h6 { color: #181818; font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 0.02em; }
@@ -545,10 +559,14 @@ h3 { font-size: 32px; line-height: 1.1em; letter-spacing: 0.015em; font-style: i
 
 p { margin-bottom: 9px; }
 
-footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; }
+p.voice-one, p.voice-two { text-align: justify; }
+
+p.voice-two { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; letter-spacing: 0.0125em; }
+
+footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; margin-bottom: 100px; }
 footer p, footer a { color: #afafaf; }
 footer a:visited { color: #afafaf; }
-footer a:hover { color: #009dff; }
+footer a:hover { color: #1642ff; }
 footer a:active, footer a:focus { color: #7800ff; }
 
 /* @Font-Face ****************************/
