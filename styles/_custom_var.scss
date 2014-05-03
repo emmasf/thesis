@@ -5,14 +5,23 @@
 
 $link-color: rgb(0,157,255);
 $link-color: rgb(22,66,255);
+$link-color: rgb(0,115,189);
+
+$spot-color:rgb(120,0,255);
+$spot-color:rgb(49,52,171);
+
 $light-grey-accent: rgb(245,245,245);
 $grey-text:rgb(175,175,175);
-$spot-color:rgb(120,0,255);
 
-$button-gradient: top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.05) 100%;
+$button-gradient: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($light-grey-accent, 0.9)), color-stop(100%,rgba($light-grey-accent, 1)));
 $button-color: $light-grey-accent;
+$button-color: $button-gradient;
 $button-color-hover: $spot-color;
 $button-color-active: $link-color;
+
+
+$gradient: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(74,25,209)), color-stop(100%,rgb(7,127,255)));
+
 
 $screen-lg: 960px;
 $screen-md: 768px;
@@ -29,5 +38,7 @@ $small-text: 13px;
 
 $border-radius: 5px;
 
+$rule: 8px solid #000;
 $rule: 8px solid $light-grey-accent;
+
 

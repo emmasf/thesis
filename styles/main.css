@@ -483,8 +483,8 @@ img { width: 100%; margin: 10px 0; }
 /* Component Styles ****************************/
 #gdmfa { height: 36px; width: 100%; background-color: whitesmoke; }
 #gdmfa p { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; color: #000; line-height: 24px; padding: 6px 12px; }
-#gdmfa a:hover { color: #1642ff; }
-#gdmfa a:focus, #gdmfa a:active { color: #1642ff; }
+#gdmfa a:hover { color: #0073bd; }
+#gdmfa a:focus, #gdmfa a:active { color: #0073bd; }
 #gdmfa a:visited { color: inherit; }
 
 nav { position: relative; width: 100%; margin-top: 40px; border-bottom: 8px solid whitesmoke; margin-bottom: 40px; padding-bottom: 5px; }
@@ -492,23 +492,23 @@ nav ul li { margin-bottom: 12px; float: left; margin-right: 24px; font-weight: b
 nav ul li button { margin-top: -5px; float: right; position: absolute; right: 0; }
 nav a { color: #000; }
 nav a:visited { color: #000; }
-nav a:hover { color: #1642ff; }
-nav ul li a:active, nav ul li.active a:focus { color: #7800ff; }
-nav ul li.active a { color: #7800ff; }
+nav a:hover { color: #0073bd; }
+nav ul li a:active, nav ul li.active a:focus { color: #3134ab; }
+nav ul li.active a { color: #3134ab; }
 
-button { padding: 6px 9px; margin-top: 30px; background-color: whitesmoke; border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
-button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #1642ff; }
-button a:visited { color: #1642ff; }
+button { padding: 6px 9px; margin-top: 30px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.9)), color-stop(100%, whitesmoke)); border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
+button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #0073bd; }
+button a:visited { color: #0073bd; }
 
 button.big { padding: 12px 18px; margin-top: 30px; }
 button.big a { font-size: 17px; }
 
 button:focus { outline: 0 !important; }
 
-button:hover { background-color: #7800ff; }
+button:hover { background: #3134ab; }
 button:hover a { color: #fff; }
 
-button:focus, button:active { background-color: #1642ff; }
+button:focus, button:active { background: #0073bd; }
 button:focus a, button:active a { color: #fff; }
 
 .image-pile img { float: left; margin-right: 12px; }
@@ -516,8 +516,8 @@ button:focus a, button:active a { color: #fff; }
 footer { margin: 40px 0; border-top: 8px solid whitesmoke; padding-top: 20px; }
 footer .right { text-align: right; }
 footer svg { height: 36px; fill: #afafaf; margin-right: 5px; margin-top: -5px; }
-footer svg:hover { fill: #1642ff; }
-footer svg:active, footer svg:focus { fill: #7800ff; }
+footer svg:hover { fill: #0073bd; }
+footer svg:active, footer svg:focus { fill: #3134ab; }
 footer svg#twitter { width: 36px; }
 footer svg#linkedin { width: 32px; }
 footer svg#behance { width: 38px; }
@@ -555,7 +555,7 @@ h1, h2, h3, h4, h5, h6 { color: #181818; font-family: Hel, Helvetica, Arial, san
 
 h1 { font-size: 90px; line-height: 1.1em; letter-spacing: 0.015em; margin-top: 24px; }
 
-h3 { font-size: 32px; line-height: 1.1em; letter-spacing: 0.015em; font-style: italic; margin-top: 12px; margin-bottom: 24px; }
+h3 { font-size: 28px; font-family: Arn, Georgia, serif; line-height: 1.25em; letter-spacing: 0.015em; letter-spacing: 0.01em; margin-top: 12px; margin-bottom: 24px; }
 
 p { margin-bottom: 9px; }
 
@@ -566,8 +566,8 @@ p.voice-two { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold;
 footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; margin-bottom: 100px; }
 footer p, footer a { color: #afafaf; }
 footer a:visited { color: #afafaf; }
-footer a:hover { color: #1642ff; }
-footer a:active, footer a:focus { color: #7800ff; }
+footer a:hover { color: #0073bd; }
+footer a:active, footer a:focus { color: #3134ab; }
 
 /* @Font-Face ****************************/
 @font-face { font-family: 'Arn'; src: url("../type/Arnhem-Blond.eot"); src: url("../type/Arnhem-Blond.eot?#iefix") format("embedded-opentype"), url("../type/Arnhem-Blond.woff") format("woff"), url("../type/Arnhem-Blond.ttf") format("truetype"); font-weight: normal; font-style: normal; }
