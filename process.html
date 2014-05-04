@@ -35,17 +35,10 @@
 
 <nav id="nav" class="sixteen columns clearfix fixed">
 		<ul class="nav nav-tabs">
-<<<<<<< HEAD
     <li><a href="index.html">Intro</a></li>
     <li><a href="app.html">The Book</a></li>
     <li class="active"><a href="process.html">The Process</a></li>
     <li><a href="exhibition.html">The Exhibition</a></li>
-=======
-    <li class="intro-link"><a href="index.html">White<br/> as snow.</a></li>
-    <li><a href="app.html">Application</a></li>
-    <li class="active"><a href="process.html">Process + Essay</a></li>
-    <li><a href="exhibition.html">Exhibition</a></li>
->>>>>>> FETCH_HEAD
     <li><a href="thanks.html">Colophon</a></li>
     <li class="launcher"><button><a href="viewer.html">Launch the App</a></button></li>
   </ul>
@@ -252,9 +245,19 @@
 <script type="text/javascript" src="js/vendor/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
-		  maxWidth:600;
-	});
+    $(".fancybox")
+    .fancybox({
+      helpers : {
+        overlay : {
+          closeClick : fals,
+          css : {
+            'background' : 'rgba(90,90,90, 0.97)'
+            'padding' : '0'
+          }
+        }
+      }
+    });
+  });
 </script>
 
 <!-- Livereload preview, axe before going live -->

@@ -152,7 +152,14 @@ nav.fixed {
   margin-top: 220px;
   img {
     width:90%;
-    margin-left: 10%}
+    margin-left: 10%;
+    -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%);
+    opacity: 0.5;
+    }
+  img:hover {
+        -webkit-filter: none;-moz-filter: gnone;filter: none;
+        opacity:1;
+    }
   }
   
 p.voice-one, p.voice-two {
