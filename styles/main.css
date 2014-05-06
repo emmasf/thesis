@@ -477,7 +477,11 @@ or wrap each row of columns in a <div class="row"> */
 /** Customs Styles ************************************************************/
 /******************************************************************************/
 /******************************************************************************/
-.container { margin: 0px auto; }
+.container { margin: 0px auto; padding: 36px 0 144px 0; }
+
+#page { margin-top: 120px; }
+
+footer { margin-top: 72px; }
 
 img { width: 100%; margin: 10px 0; }
 
@@ -487,48 +491,59 @@ img { width: 100%; margin: 10px 0; }
 #gdmfa a:focus, #gdmfa a:active { color: #0073bd; }
 #gdmfa a:visited { color: inherit; }
 
-nav { position: relative; width: 100%; margin-top: 40px; border-bottom: 8px solid whitesmoke; margin-bottom: 40px; }
-nav ul { height: 60px; margin: 15px 0; }
-nav ul li { float: left; margin-right: 24px; font-weight: bold; margin-top: 33px; }
-nav ul li button { margin-top: -3px; float: right; position: absolute; right: 0; }
-nav a { color: #000; 		  /* 
-		  text-decoration: none; border-top: 3px solid $light-grey-accent;
-		  padding: 5px 0; */ }
-nav a:visited { color: #000; }
-nav a:hover { color: #0073bd; }
-nav ul li a:active, nav ul li.active a:focus { color: #3134ab; }
-nav ul li.active a { color: #3134ab; }
-nav ul li.intro-link { font-family: Hel, Helvetica, Arial, sans-serif; padding: 7px 0; font-size: 1.25em; margin-top: 0px; line-height: 1.125em; }
-nav ul li.intro-link a { text-decoration: none; }
+nav#navtwo { position: relative; width: 100%; padding-bottom: 16px; border-bottom: 8px solid whitesmoke; z-index: 5; font-family: Hel, Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
+nav#navtwo ul { margin: 15px 0; }
+nav#navtwo ul li { float: left; margin-right: 18px; font-weight: bold; }
+nav#navtwo ul li button { margin-top: -3px; float: right; position: absolute; right: 0; }
+nav#navtwo a { color: #0073bd; text-decoration: none; padding: 7px 8px 5px 8px; }
+nav#navtwo a:visited { color: #0073bd; }
+nav#navtwo a:hover { background-color: whitesmoke; text-decoration: none; color: black; }
+nav#navtwo a:active, nav#navtwo a:focus { background-color: #0073bd; color: #fff; text-decoration: none; }
+nav#navtwo ul li.active a { text-decoration: none; color: #fff; background-color: #000; }
 
-button { padding: 6px 9px; margin-top: 30px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.9)), color-stop(100%, whitesmoke)); border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
+  /*
+nav {	
+	position: relative;
+	width: 100%;
+	margin-top:40px; border-bottom:$rule; margin-bottom: 40px; ul {  height:60px;  margin: 15px 0; }
+	ul li { 	float:left; 	margin-right:24px; 	font-weight: bold; 	margin-top: 33px; 	button { 		margin-top:-3px;float:right; 		position: absolute; 		right: 0;}
+		}
+		a { 
+		  color:#000; 
+		  // text-decoration: none; // border-top: 3px solid $light-grey-accent;
+		  // padding: 5px 0; }
+		a:visited { color:#000; }
+		a:hover { color:$link-color; }
+		ul li a:active, ul li.active a:focus { color:$spot-color; }
+		ul li.active a { color:$spot-color; }
+		 ul li.intro-link {  font-family: $sans;  padding: 7px 0; a { text-decoration: none; } font-size: 1.25em; margin-top: 0px; line-height: 1.125em; } }
+*/
+button { padding: 8px 9px 6px 9px; margin-top: 30px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.9)), color-stop(100%, whitesmoke)); border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
 button a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #0073bd; }
 button a:visited { color: #0073bd; }
 
-button.big { padding: 12px 18px; margin-top: 30px; }
-button.big a { font-size: 17px; }
-
-button:focus { outline: 0 !important; }
+button.big { padding: 24px 36px 18px 36px; margin-top: 30px; }
+button.big a { font-size: 24px; }
 
 button:hover { background: #3134ab; }
 button:hover a { color: #fff; }
 
-button:focus, button:active { background: #0073bd; }
+button:focus, button:active { outline: 0 !important; background: #0073bd; }
 button:focus a, button:active a { color: #fff; }
 
 .image-pile img { float: left; margin-right: 12px; }
 
-#subnav { margin-top: 230px; }
+#subnav { margin-top: 171px; }
 #subnav h4 { font-size: 14px; }
 
-.fixed { position: fixed; }
+.fixed { position: fixed !important; }
 
-nav.fixed { background-color: #fff; margin-top: 36px; padding-top: 40px; }
+nav#navtwo.fixed { background-color: #fff; padding-top: 36px; }
 
-#essay { margin-top: 205px; margin-bottom: 131px; }
-#essay a { margin-top: -231px; padding-top: 231px; display: block; visibility: hidden; }
+#essay { margin-top: 145px; margin-bottom: 131px; }
+#essay a { margin-top: -145px; padding-top: 145px; display: block; visibility: hidden; }
 
-.thumbnails { margin-top: 220px; }
+.thumbnails { margin-top: 160px; z-index: 0; }
 .thumbnails img { width: 90%; margin-left: 10%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: grayscale(100%); opacity: 0.5; }
 .thumbnails img:hover { -webkit-filter: none; -moz-filter: gnone; filter: none; opacity: 1; }
 
@@ -538,7 +553,7 @@ p.voice-one { font-family: Arn, Georgia, serif; font-weight: bold; font-size: 18
 
 p.voice-two { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: normal; font-size: 15px; letter-spacing: 0.0125em; }
 
-footer { margin: 40px 0; border-top: 8px solid whitesmoke; padding-top: 20px; }
+footer { border-top: 8px solid whitesmoke; padding-top: 20px; }
 footer .right { text-align: right; }
 footer svg { height: 36px; fill: #afafaf; margin-right: 5px; margin-top: -5px; }
 footer svg:hover { fill: #0073bd; }
@@ -576,15 +591,15 @@ ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px; }
 
 body { font: 17.33px Arn, Georgia, serif; color: #000; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; line-height: 1.33em; letter-spacing: 0.01em; }
 
-h1, h2, h3, h4, h5, h6 { color: #181818; font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 0.02em; }
+h1, h2, h3, h4, h5, h6 { color: #181818; font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 0.02em; margin: 0; }
 
-h1 { font-size: 90px; line-height: 1.1em; letter-spacing: 0.015em; margin-top: 24px; }
+h1 { font-size: 90px; line-height: 1.1em; letter-spacing: 0.015em; }
 
 h3 { font-size: 28px; font-family: Arn, Georgia, serif; line-height: 1.25em; letter-spacing: 0.015em; letter-spacing: 0.01em; margin-top: 12px; margin-bottom: 24px; }
 
 p { margin-bottom: 9px; }
 
-footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; margin-bottom: 100px; }
+footer { font-family: Hel, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; line-height: 1.5em; }
 footer p, footer a { color: #afafaf; }
 footer a:visited { color: #afafaf; }
 footer a:hover { color: #0073bd; }
