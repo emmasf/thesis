@@ -77,11 +77,10 @@
 
 			scrolling : 'auto', // 'auto', 'yes' or 'no'
 			wrapCSS   : '',
-
 			arrows     : true,
-			closeBtn   : true,
+			closeBtn   : false,
 			closeClick : false,
-			nextClick  : false,
+			nextClick  : true,
 			mouseWheel : true,
 			autoPlay   : false,
 			playSpeed  : 3000,

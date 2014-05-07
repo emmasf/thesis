@@ -47,7 +47,6 @@ img {
 
 nav#navtwo {	
 	position: relative;
-	width: 100%;
 	padding-bottom: ($padding*2);
   border-bottom:$rule;
   z-index: 5;
@@ -91,49 +90,6 @@ nav#navtwo {
       }
   }
   
-  /*
-nav {	
-	position: relative;
-	width: 100%;
-	margin-top:40px;
-  border-bottom:$rule;
-  margin-bottom: 40px;
-  ul { 
-    height:60px; 
-    margin: 15px 0;
-    }
-	ul li {
-  	float:left;
-  	margin-right:24px;
-  	font-weight: bold;
-  	margin-top: 33px;
-  	button {
-  		margin-top:-3px;float:right;
-  		position: absolute;
-  		right: 0;}
-		}
-		a { 
-		  color:#000; 
-		  // text-decoration: none;
-      // border-top: 3px solid $light-grey-accent;
-		  // padding: 5px 0;
-      }
-		a:visited { color:#000; }
-		a:hover { color:$link-color; }
-		ul li a:active, ul li.active a:focus { color:$spot-color; }
-		ul li.active a { color:$spot-color; }
-		
-  ul li.intro-link { 
-    font-family: $sans; 
-    padding: 7px 0;
-    a { text-decoration: none; }
-    font-size: 1.25em;
-    margin-top: 0px;
-    line-height: 1.125em;
-    }
-  }
-*/
-  
 button {
   padding:8px 9px 6px 9px;
   margin-top: 30px;
@@ -144,14 +100,16 @@ button {
   -webkit-border-radius:  $border-radius;
   -o-border-radius:  $border-radius;
   
-  a {
+  a, li a {
     font-size: $small-text;
     font-weight: 700;
     font-family: $sans;
     text-decoration: none;  
     color: $button-color-active;
+    background: rgba(0,0,0,0);
     }
     
+  a:hover, li a:hover { background: rgba(0,0,0,0); }
   a:visited {color: $button-color-active;}
   
   }
@@ -187,6 +145,7 @@ button:focus, button:active {
   h4 {
     font-size: 14px;  
     }
+  a.active {color:red;}
   }
   
 .fixed { position: fixed !important;}
