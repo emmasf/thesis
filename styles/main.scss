@@ -26,8 +26,7 @@ img {
     margin: 10px 0;
     } 
     
-#gdmfa {
-  height: 36px;
+#gdmfa { /** Top bar linking back to all **/
   width:100%;
   background-color: $light-grey-accent;
   z-index: 2;
@@ -38,11 +37,13 @@ img {
     color: #000;
     line-height: 24px;
     padding:6px 12px;
-    }    
+    margin:0;
+   
   a:hover { color: $link-color; }
   a:focus, a:active { color: $link-color; }
-  a:visited { color: inherit; }
+  a:visited { color: #000; }
   } 
+      } 
 
 nav#navtwo {	
 	position: relative;
