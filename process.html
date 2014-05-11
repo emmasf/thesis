@@ -46,7 +46,7 @@
 </nav>
 	
 		<div id="subnav" class="two columns"><span class="fixed">
-  		<h4><a href="#exposition">Exposition</a></h4>
+  		<h4><a class="active" href="#exposition">Exposition</a></h4>
   		<h4><a href="#catalyst">Catalyst</h4>
       <h4><a href="#conflict">Conflict</h4>
       <h4><a href="#climax">Climax</h4>
@@ -73,7 +73,7 @@
 <p class="voice-two">I almost gave up. I cursed myself for trying to develop a new method so far from my comfort zone. I fell fully into analytical mode. I stopped painting apples and started making spreadsheets. I took a detour into design-about-design and tried to make Snow White into an allegory for the process of user experience design, content I felt much more comfortable with. But here, too, the separation of research and visuals proved to be just as troublesome. My meta-project flopped.</p>
 <p class="voice-one">Why is it that so many people in so many places find this story to be interesting? This is the same as asking why there are archetypes. Beauty and youth, female sexuality, tension between mothers and daughters: these issues run deep. We love to identify with others and to imagine our lives as others’ lives.</p>
 <p class="voice-two">Process is personal. There is no one right way. On the first day of grad school, I attended a workshop led by Paul Sahre and Jan Wilker. Sahre was asked if he reads the book before designing its cover. “You must,” he said.</p>
-Jan Wilker laughed, and encouraged him to shed the burden of context. Wilker described his process as throwing things at a wall, making hundreds of images without evaluating them, and then sifting through. Both men are great designers; what works for one person will not work for another. I am not Jan Wilker.</p>
+<p class="voice-two">Jan Wilker laughed, and encouraged him to shed the burden of context. Wilker described his process as throwing things at a wall, making hundreds of images without evaluating them, and then sifting through. Both men are great designers; what works for one person will not work for another. I am not Jan Wilker.</p>
 <p class="voice-two"><a name="climax" id="climax" class="waypoint" ></a>I didn’t give up. Instead, I stopped killing ideas in my mind before I saw them through. I turned a more analytical eye towards what I’d made instead of engaging in a strange, unthinking formalist evaluation. I realized that in trying to shut down my search for meaning, I was left with no ground on which to move forward into the next step. </p>
 <p class="voice-two">When I stopped trying so hard to be a blank slate, I saw that the pieces I had created could turn into a great project. If my research was so interesting, why not use it as content? Rather than retelling events with research-inspired imagery, I could reveal my ideas and the interesting new information I found. This would allow readers to reshape the story for themselves.</p>
 <p class="voice-one">Snow White is an empty shell. The Queen is a classic narcissist. The King is absent. The Prince likes an easy target.  We all sin.</p>
@@ -92,9 +92,8 @@ Jan Wilker laughed, and encouraged him to shed the burden of context. Wilker des
       <a class="fancybox gallery" rel="gallery" title="Sample title 3" href="img/grad_tempt02.jpg"><img src="img/grad_tempt02.jpg" alt="" /></a>
       <a class="fancybox gallery" rel="gallery" title="Sample title 4" href="img/marbled-04.jpg"><img src="img/marbled-04.jpg" alt="" /></a>
       <a class="fancybox gallery" rel="gallery" title="Sample title 5" href="img/status_01.jpg"><img src="img/status_01.jpg" alt="" /></a>
+		</div>
 
-		</div>
-		</div>
 		
 <footer class="sixteen columns clearfix">
 	<p class="footer left eight columns alpha">
@@ -233,16 +232,11 @@ Jan Wilker laughed, and encouraged him to shed the burden of context. Wilker des
 
 <!-- Waypoint -->
 <script>
-  $('.waypoint').waypoint(function() {
-    //alert('waypoints is working, and you have hit the climax');
-    
-    /// what parameters are being passed through? use them
-    // alert(this.id);
-    
-    
+  $('.waypoint').waypoint(function(direction) {   
     $('#subnav').find("a").removeClass("active");
     $('#subnav').find("a[href='#" + this.id + "']").addClass("active");
-  });
+    
+  },{ offset: 81 });
 </script>
 
 
@@ -264,9 +258,6 @@ Jan Wilker laughed, and encouraged him to shed the burden of context. Wilker des
 <script type="text/javascript" src="js/vendor/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-    $("#singleton").attr('rel', 'gallery').fancybox({
-        padding     : 0,
-        });
     $(".fancybox.gallery").attr('rel', 'gallery').fancybox({
         padding     : 0,
         });

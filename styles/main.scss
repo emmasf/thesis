@@ -10,8 +10,7 @@
 
 .container {
   margin: 0px auto;
-  padding: ($padding*6) 0 ($padding*12
-) 0;
+  padding: ($padding*6) 0 ($padding*12) 0;
 text-rendering: optimizeLegibility;
 -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
@@ -19,6 +18,7 @@ text-rendering: optimizeLegibility;
   -o-font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
   font-feature-settings: "kern";
+   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
   }
 
 #page {
@@ -168,7 +168,7 @@ nav#navtwo.fixed {
 
 #essay { 
   margin-top: 145px;
-  margin-bottom: 131px;
+  margin-bottom: 62px;
   a { 
     margin-top: -145px;
     padding-top: 145px; 
