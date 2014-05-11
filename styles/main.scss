@@ -149,13 +149,16 @@ button:focus, button:active {
     margin-right:12px;
     }
   }
-  
+ 
+.topbit {margin-bottom: 30px;} 
 
 #subnav {
   h4 {
     font-size: 14px;  
     }
   a.active {color:red;}
+  padding-left:90px;
+  padding-top: 200px;
   }
   
 #subnav.fixed {
@@ -185,7 +188,7 @@ nav#navtwo.fixed {
   z-index: 0;
   img {
     width:90%;
-    margin-left: 10%;
+    margin-right: 10%;
     -webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%);
     opacity: 0.5;
     }
@@ -306,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 	
 h1 {
-  font-size: 90px;
+  font-size: 70px;
   line-height: 1.1em;
   letter-spacing: 0.015em;
   } 
@@ -331,7 +334,7 @@ p {
   margin-bottom: 9px;
   }
   
-
+e { font-weight: 700; }
   
 footer {
   font-family: $sans;
