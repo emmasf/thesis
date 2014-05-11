@@ -524,7 +524,9 @@ button:focus a, button:active a { color: #fff; }
 
 .fixed { position: fixed !important; }
 
-nav#navtwo.fixed { background-color: #fff; padding-top: 36px; }
+.stuck { position: fixed !important; }
+
+nav#navtwo.fixed { background-color: #fff; top: 0; padding-top: 24px; }
 
 #essay { margin-top: 145px; margin-bottom: 62px; }
 #essay a { margin-top: -145px; padding-top: 145px; display: block; visibility: hidden; }

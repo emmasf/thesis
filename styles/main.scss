@@ -160,10 +160,13 @@ button:focus, button:active {
   }
   
 .fixed { position: fixed !important;}
+
+.stuck { position: fixed !important;}
   
 nav#navtwo.fixed {
   background-color: #fff;
-  padding-top: 36px;
+  top:0;
+  padding-top: 24px;
   }
 
 #essay { 
