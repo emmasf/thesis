@@ -10,7 +10,15 @@
 
 .container {
   margin: 0px auto;
-  padding: ($padding*4.5) 0 ($padding*18) 0;
+  padding: ($padding*6) 0 ($padding*12
+) 0;
+text-rendering: optimizeLegibility;
+-moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern";
+  -o-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
   }
 
 #page {
@@ -38,12 +46,15 @@ img {
     line-height: 24px;
     padding:6px 12px;
     margin:0;
-   
-  a:hover { color: $link-color; }
-  a:focus, a:active { color: $link-color; }
-  a:visited { color: #000; }
+  
   } 
       } 
+
+p {    
+    a:visited { color: #000; }  
+  a:hover { color: $link-color; }
+  a:focus, a:active { color: $link-color; }
+  }
 
 nav#navtwo {	
 	position: relative;
@@ -69,11 +80,11 @@ nav#navtwo {
   		right: 0;}
 		}
 		a { 
-		  color: $link-color;
-		  text-decoration: none; 
+		  color: #000;
+		  /* text-decoration: none;  */
 		  padding: 7px 8px 5px 8px;
       }
-		a:visited { color:$link-color; }
+		a:visited { color:#000; }
 		a:hover {
 		  background-color: $light-grey-accent;
 		  text-decoration: none;
@@ -189,9 +200,9 @@ p.voice-one, p.voice-two {
 p.voice-one {
   font-family: $serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   letter-spacing: 0.02em; 
-  line-height: 1.33em; 
+  line-height: 1.25em; 
   }
 
 p.voice-two {
@@ -199,6 +210,7 @@ p.voice-two {
   font-weight: normal;
   font-size: 15px;
   letter-spacing: 0.0125em;
+  line-height: 1.38em; 
   }
  
 footer {
