@@ -34,7 +34,7 @@
 
 <div class="container">
 
-<nav id="navtwo" class="sixteen columns clearfix fixed">
+<nav id="navtwo" class="sixteen columns clearfix">
 	<ul class="nav nav-tabs">
     <li><a href="index.html">Intro</a></li>
     <li><a href="app.html">Outcome</a></li>
@@ -45,7 +45,10 @@
   </ul>
 </nav>
 	
-		<div id="sidebar" class="two columns">
+		<div id="page">
+		
+		<div id="sidebar" class="four columns">
+		  <h2>On outcomes and intentions.</h2>
 		  <p>Looking backwards, I can see that my thesis project followed the classic narrative arc: triumph only after a whole pile of struggle. 
 		  </p>
 		  <div id="subnav">
@@ -55,18 +58,9 @@
       <h4><a href="#climax">Climax</h4>
       <h4><a href="#resolution">Resolution</h4>
       </div>
-		</div>
+		</div>	
 		
-		<div class="three columns thumbnails">        
-      <a class="fancybox gallery" rel="gallery" title="Sample title 1" href="img/apples_round.jpg"><img src="img/apples_round.jpg" alt="" /></a>
-      <a class="fancybox gallery" rel="gallery" title="Sample title 2" href="img/emotionaldwarves.jpg"><img src="img/emotionaldwarves.jpg" alt="" /></a>
-      <a class="fancybox gallery" rel="gallery" title="Sample title 3" href="img/grad_tempt02.jpg"><img src="img/grad_tempt02.jpg" alt="" /></a>
-      <a class="fancybox gallery" rel="gallery" title="Sample title 4" href="img/marbled-04.jpg"><img src="img/marbled-04.jpg" alt="" /></a>
-      <a class="fancybox gallery" rel="gallery" title="Sample title 5" href="img/status_01.jpg"><img src="img/status_01.jpg" alt="" /></a>
-		</div>		
-		
-		<div class="nine columns offset-by-one " id="essay">
-			<h2>On outcomes and intentions.</h2>
+		<div class="nine columns " id="essay">
           <p class="voice-one"><a name="exposition" id="exposition" class="waypoint" ></a><i>White as snow</i> is an experiment in digital narrative. This interactive story for adults mixes historical context, sociological analysis, and visual surprise with more traditional text-based narrative to shed light on the Grimms’ classic tale. Reading <i>White as snow</i> is an act of uncovering and creating, a new means of exercising the imagination.</p>
 <p class="voice-two">Sounds like a tidy little package, right? It didn’t start that way. In fact, I began with only a foggy idea of what I wanted to create. Instead of putting a pretty bow on the project and talking about it in hindsight, I want to tell you about the experience of making it. This story is not unique; it is a classic narrative arc, the struggle of a creative person trying to balance meaning and form.</p>
 <p class="voice-two">I spent a year thinking about Snow White, but I designed and developed <i>White as snow</i> in a fraction of that time. Before my ideas popped out on screen, they tumbled around in my brain for what seemed like an eternity. Before I felt accomplished, I felt lost; before I had a breakthrough, I had a lot of failures.</p>
@@ -95,6 +89,14 @@
 <p class="voice-two">I recently asked many of my classmates to describe what they learned in graduate school. Their responses focused on one thing: the discovery of their productive, creative self. “I figured out how to get past the blank page,” “I learned how to work with people,” “I discovered how I can function as a creative person,”  and “I learned to trust my intuition.” More than any portfolio piece or concrete skill, my peers valued the truths about themselves, truths revealed by constant hard work across many projects, by failures as much as successes.</p>
 <p class="voice-two"><i>White as snow</i> is a marriage of showing and telling, of research and visual design. I didn’t begin the project with this goal in mind; it arose from my successes and failures along the way. I saw the thesis project as more of an opportunity for creative growth than the moment to create a masterpiece, and in doing so I took risks. I gave myself the challenge of discovering something I couldn’t imagine before I began, and I succeeded. Along the way, I learned to trust the process.</p>
         </div>
+		
+				<div class="three columns thumbnails">        
+      <a class="fancybox gallery" rel="gallery" title="Sample title 1" href="img/apples_round.jpg"><img src="img/apples_round.jpg" alt="" /></a>
+      <a class="fancybox gallery" rel="gallery" title="Sample title 2" href="img/emotionaldwarves.jpg"><img src="img/emotionaldwarves.jpg" alt="" /></a>
+      <a class="fancybox gallery" rel="gallery" title="Sample title 3" href="img/grad_tempt02.jpg"><img src="img/grad_tempt02.jpg" alt="" /></a>
+      <a class="fancybox gallery" rel="gallery" title="Sample title 4" href="img/marbled-04.jpg"><img src="img/marbled-04.jpg" alt="" /></a>
+      <a class="fancybox gallery" rel="gallery" title="Sample title 5" href="img/status_01.jpg"><img src="img/status_01.jpg" alt="" /></a>
+		</div>	
 		
 <footer class="sixteen columns clearfix">
 	<p class="footer left eight columns alpha">
@@ -222,6 +224,7 @@
 		</p>
   </footer>
 
+	</div><!-- page-->
 	</div><!-- container -->
 
 
@@ -237,6 +240,11 @@
           $('#navtwo').addClass('fixed');
       } else {
           $('#navtwo').removeClass('fixed');
+      };
+      if ($(this).scrollTop() > 187) {
+          $('#subnav').addClass('fixed');
+      } else {
+          $('#subnav').removeClass('fixed');
       }
   });
 </script>
@@ -250,8 +258,6 @@
     $('#subnav').find("a[href='#" + this.id + "']").addClass("active");
     
   },{ offset: 81 });
-  
-    $('#subnav').waypoint('sticky');
 </script>
 
 
