@@ -156,14 +156,13 @@ button:focus, button:active {
   h4 {
     font-size: 14px;  
     }
-  a.active {color:red;}
+  a.active {color:red; text-decoration: none}
   padding-left:90px;
-  padding-top: 200px;
+  padding-top: 150px;
   }
   
 #subnav.fixed {
   top:0;
-  margin-top: 140px;
   }
   
 .fixed { position: fixed !important;}
@@ -175,10 +174,10 @@ nav#navtwo.fixed {
   }
 
 #essay { 
-  margin-bottom: 62px;
+  margin-bottom: 155px;
   a { 
-    margin-top: -145px;
-    padding-top: 145px; 
+    margin-top: -150px;
+    padding-top: 150px; 
     display: block;
     visibility: hidden;
     }
@@ -206,9 +205,10 @@ p.voice-one, p.voice-two {
 p.voice-one {
   font-family: $serif;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 19px;
   letter-spacing: 0.02em; 
   line-height: 1.25em; 
+  padding: 5px 0;
   }
 
 p.voice-two {
@@ -313,6 +313,8 @@ h1 {
   line-height: 1.1em;
   letter-spacing: 0.015em;
   } 
+
+.skinny {padding-right: 100px !important}
   
 h2 {
   font-size: 28px;

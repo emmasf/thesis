@@ -48,9 +48,10 @@
 		<div id="page">
  <div class="sixteen columns clearfix topbit">		
 		<div class="twelve columns">
-		  <h1>On outcomes and intentions.</h1>
+		  <h1 class="skinny">On outcomes and intentions.</h1>
 		  <p>Looking backwards, I can see that my thesis project followed the classic narrative arc: <e>exposition, catalyst, conflict, climax, then resolution.</e> In other words, triumph only after a whole pile of struggle. The other sections show you the clean, polished exterior of the project. I could have focused my thesis documentation on this and written a smart essay on digital narrative. Instead, I’m going to show you the messy interior. I love the outcome of this project, but the best thing I did this year was learn how to work.
 		  </p>
+      <!-- <h3>The classic narrative arc.</h3> -->
 		</div>
 		<div id="subnav" class="two columns"> 
   		<h4><a class="active" href="#exposition">Exposition</a></h4>
@@ -246,7 +247,7 @@
       } else {
           $('#navtwo').removeClass('fixed');
       };
-      if ($(this).scrollTop() > 187) {
+      if ($(this).scrollTop() > 210) {
           $('#subnav').addClass('fixed');
       } else {
           $('#subnav').removeClass('fixed');
@@ -262,12 +263,11 @@
     $('#subnav').find("a").removeClass("active");
     $('#subnav').find("a[href='#" + this.id + "']").addClass("active");
     
-  },{ offset: 81 });
+  },{ offset: 10 });
 </script>
 
 
 <!-- Smooth Scrolling -->
-<!--
 <script src="js/vendor/jquery.localscroll.js" type="text/javascript"></script> 
 <script src="js/vendor/jquery.scrollTo.js" type="text/javascript"></script> 
 <script type="text/javascript">
@@ -275,7 +275,6 @@
      $('#subnav').localScroll({duration:600});
   });
 </script>
--->
 
 
 <!-- Lightbox ---------------------------------------->
