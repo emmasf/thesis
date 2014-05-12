@@ -2,6 +2,12 @@
 /** CUSTOM VARIABLES **********************************************************/
 /******************************************************************************/
 /******************************************************************************/
+@-webkit-keyframes textcolormorph { 0% { background: rgba(2, 111, 195, 0.8); }
+  20% { background: rgba(2, 111, 195, 0.8); }
+  50% { background: rgba(102, 15, 255, 0.8); }
+  80% { background: rgba(2, 111, 195, 0.8); }
+  100% { background: rgba(2, 111, 195, 0.8); } }
+
 /******************************************************************************/
 /*****  Begin Normalize Styles ************************************************/
 /*****  normalize.css v1.1.3 | MIT License | git.io/normalize  ****************/
@@ -502,15 +508,15 @@ nav#navtwo a:hover { background-color: whitesmoke; text-decoration: none; color:
 nav#navtwo a:active, nav#navtwo a:focus { background-color: #0073bd; color: #fff; text-decoration: none; }
 nav#navtwo ul li.active a { text-decoration: none; color: #fff; background-color: #000; }
 
-button { padding: 8px 9px 6px 9px; margin-top: 30px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.9)), color-stop(100%, whitesmoke)); border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
-button a, button li a { font-size: 13px; font-weight: 700; font-family: Hel, Helvetica, Arial, sans-serif; text-decoration: none; color: #0073bd; background: rgba(0, 0, 0, 0); }
+button { padding: 8px 9px 6px 9px; margin-top: 30px; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.9)), color-stop(100%, whitesmoke)); border: 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; font-family: Hel, Helvetica, Arial, sans-serif; }
+button a, button li a { font-size: 13px; font-weight: 700; text-decoration: none; color: #0073bd; color: #fff; background: rgba(0, 0, 0, 0); }
 button a:hover, button li a:hover { background: rgba(0, 0, 0, 0); }
-button a:visited { color: #0073bd; }
+button a:visited { color: #0073bd; color: #fff; }
 
-button.big { padding: 24px 36px 18px 36px; margin-top: 30px; }
-button.big a { font-size: 24px; }
+button.big { padding: 24px 36px 18px 36px; padding: 24px 36px 18px 36px; margin-top: 60px; -moz-animation: textcolormorph 3s infinite ease-in-out; -webkit-animation: textcolormorph 3s infinite ease-in-out; animation: textcolormorph 3s infinite ease-in-out; animation-duration: 3s; width: 50%; }
+button.big a { font-size: 24px; letter-spacing: 0.5px; font-weight: 600; text-rendering: optimizeLegibility; }
 
-button:hover { background: #3134ab; }
+button:hover { background: #0073bd; }
 button:hover a { color: #fff; }
 
 button:focus, button:active { outline: 0 !important; background: #0073bd; }
@@ -523,7 +529,7 @@ button:focus a, button:active a { color: #fff; }
 #subnav { padding-left: 90px; padding-top: 150px; }
 #subnav h4 { /* font-size: 14px;  */ text-transform: uppercase; font-weight: bold; font-size: 12px; letter-spacing: 1px; }
 #subnav h4 a { color: #000; }
-#subnav a.active { color: red; text-decoration: none; }
+#subnav a.active { color: #ee3129; text-decoration: none; }
 
 #subnav.fixed { top: 0; }
 
